@@ -1821,7 +1821,11 @@ public class VectorMediasPickerActivity extends MXCActionBarActivity implements 
         List<MediaStoreMedia> mediasList = new ArrayList<>();
 
         // images
-        String[] imagesProjection = {MediaStore.Images.ImageColumns._ID, MediaStore.Images.ImageColumns.DATE_TAKEN, MediaStore.Images.ImageColumns.MIME_TYPE};
+        String[] imagesProjection={
+            MediaStore.Images.ImageColumns._ID,
+            MediaStore.Images.ImageColumns.DATE_TAKEN,
+            MediaStore.Images.ImageColumns.MIME_TYPE
+        };
         Cursor imagesThumbnailsCursor = null;
 
         try {
@@ -1880,7 +1884,11 @@ public class VectorMediasPickerActivity extends MXCActionBarActivity implements 
         if (mIsVideoRecordingSupported) {
 
             // videos
-            String[] videosProjection = {MediaStore.Video.VideoColumns._ID, MediaStore.Video.VideoColumns.DATE_TAKEN, MediaStore.Video.VideoColumns.MIME_TYPE};
+            String[] videosProjection = {
+                MediaStore.Video.VideoColumns._ID,
+                MediaStore.Video.VideoColumns.DATE_TAKEN,
+                MediaStore.Video.VideoColumns.MIME_TYPE
+            };
             Cursor videoThumbnailsCursor = null;
 
             try {
